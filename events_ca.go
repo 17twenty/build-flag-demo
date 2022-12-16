@@ -15,3 +15,7 @@ func (EventEngine) raiseEvent() string {
 	AdditionalFunc()
 	return "I send emails about 🍁 Canada things"
 }
+
+func PlayAnthem() {
+	log.Println("Oh Canada! Oh Canada!")
+}

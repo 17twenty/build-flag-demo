@@ -12,24 +12,21 @@ version to indicate poor builds.
 
 $ go build -tags ca
 $ ./build-flag-demo
-2022/12/16 12:52:21 I also frob widgets and call AdditionalFunc()
-2022/12/16 12:52:21 I'm not tied to a specific implementation but I need to be called when Canada frobs widgets
-2022/12/16 12:52:21 Event -  I send emails about 🍁 Canada things
+2022/12/16 13:52:25 I also frob widgets and call AdditionalFunc()
+2022/12/16 13:52:25 I'm not tied to a specific implementation but I need to be called when Canada frobs widgets
+2022/12/16 13:52:25 Event -  I send emails about 🍁 Canada things
+2022/12/16 13:52:25 Oh Canada! Oh Canada!
 $ go build -tags us
 $ ./build-flag-demo
-2022/12/16 12:46:56 Event -  I send Emails about 🦅 MURICA things!!
+2022/12/16 13:52:30 Event -  I send Emails about 🦅 MURICA things!!
+2022/12/16 13:52:30 OH SAY CAN YOU SEEEEEEEEEE, BY THE DAWNS EARLY LIIIIGHT!
 $ go build
-$ ./build-flag-demo 
-2022/12/16 10:51:33 Not Implemented
-panic: Not Implemented
+$ ./build-flag-demo
+panic: I can't be used on my own
 
 goroutine 1 [running]:
-log.Panic({0xc000092f40?, 0xc000092f70?, 0x1004f19?})
-        /usr/local/Cellar/go/1.19.2/libexec/src/log/log.go:388 +0x65
-main.EventEngine.raiseEvent(...)
-        /build-flag-demo/events_default.go:11
-main.main()
-        /build-flag-demo/main.go:7 +0x48
+main.init.0()
+        /Users/nickglynn/Projects/build-flag-demo/events_default.go:7 +0x27
 ```
 
 ## Alternative Options

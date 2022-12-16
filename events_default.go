@@ -3,11 +3,15 @@
 
 package main
 
-import "log"
+func init() {
+	panic("I can't be used on my own")
+}
 
 type EventEngine struct{}
 
 func (EventEngine) raiseEvent() string {
-	log.Panic("Not Implemented")
 	return ""
+}
+
+func PlayAnthem() {
 }
