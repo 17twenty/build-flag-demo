@@ -12,5 +12,6 @@ type EventEngine struct {
 
 func (EventEngine) raiseEvent() string {
 	log.Println("I also frob widgets and call AdditionalFunc()")
+	AdditionalFunc()
 	return "I send emails about 🍁 Canada things"
 }

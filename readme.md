@@ -11,9 +11,10 @@ version to indicate poor builds.
 ```bash
 
 $ go build -tags ca
-$ ./build-flag-demo 
-2022/12/16 12:46:31 I also frob widgets and call AdditionalFunc()
-2022/12/16 12:46:31 Event -  I send emails about 🍁 Canada things
+$ ./build-flag-demo
+2022/12/16 12:52:21 I also frob widgets and call AdditionalFunc()
+2022/12/16 12:52:21 I'm not tied to a specific implementation but I need to be called when Canada frobs widgets
+2022/12/16 12:52:21 Event -  I send emails about 🍁 Canada things
 $ go build -tags us
 $ ./build-flag-demo
 2022/12/16 12:46:56 Event -  I send Emails about 🦅 MURICA things!!
