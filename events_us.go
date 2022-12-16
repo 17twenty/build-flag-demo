@@ -9,5 +9,5 @@ type EventEngine struct {
 }
 
 func (EventEngine) raiseEvent() string {
-	return "I send Emails about 🦅 'MURICA things!!"
+	return "I send Emails about 🦅 MURICA things!!"
 }

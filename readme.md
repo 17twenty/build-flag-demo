@@ -9,12 +9,14 @@ You can use negative flags in your builds to ensure that we have a panicing
 version to indicate poor builds.
 
 ```bash
+
 $ go build -tags ca
 $ ./build-flag-demo 
-2022/12/16 10:51:24 Event -  I send emails about 🍁 Canada things
+2022/12/16 12:46:31 I also frob widgets and call AdditionalFunc()
+2022/12/16 12:46:31 Event -  I send emails about 🍁 Canada things
 $ go build -tags us
-$ ./build-flag-demo 
-2022/12/16 10:51:28 Event -  I send Emails about 🦅 MURICA things!!
+$ ./build-flag-demo
+2022/12/16 12:46:56 Event -  I send Emails about 🦅 MURICA things!!
 $ go build
 $ ./build-flag-demo 
 2022/12/16 10:51:33 Not Implemented
